@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 
 // Dynamically import map to avoid SSR issues
-const MapComponent = dynamic(() => import("../../components/MapComponent"), {
+const MapComponent = dynamic(() => import("../components/MapComponent"), {
   ssr: false,
   loading: () => (
     <div className="w-full h-64 bg-slate-100 rounded-2xl flex items-center justify-center">
